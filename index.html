@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body { margin: 0; }
+.test .title {
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4;
+    color: #1e1e1e;
+    text-align: center;
+    overflow: hidden
+}
+
+.test .title .bg_wrap {
+    height: 540px;
+    background: #000
+}
+
+.test .title .bg_wrap.small {
+    height: 320px
+}
+
+.test .title .bg_img {
+    height: auto;
+    text-align: center
+}
+
+.test .title .title_inner {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.test .title .bg_wrap img {
+    max-width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.3);
+    -webkit-animation: bgAnimation 0.8s 0.35s both;
+    animation: bgAnimation 0.8s 0.35s both
+}
+
+.test .title .title {
+    font-size: 30px
+}
+
+.test .title .title.small {
+    font-size: 18px
+}
+
+.test .title .subtitle {
+    font-size: 34px;
+    line-height: 1.4
+}
+
+.test .title .title.big {
+    font-size: 42px;
+    line-height: 1.4
+}
+
+.test .title .title + .subtitle {
+    margin-top: 36px;
+    font-size: 34px;
+    line-height: 1.6
+}
+
+.test .title .desc {
+    font-size: 14px
+}
+
+.test .title .title + .desc {
+    margin-top: 60px
+}
+
+.test .title.text_white,.test .title.text_white .title {
+    color: #fff
+}
+
+.test .title.text_white .subtitle + .desc {
+    margin-top: 60px
+}
+
+.test .place_nav {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box
+}
+
+.test .place_nav a {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #969696
+}
+
+.test .place_nav li.active a {
+    color: #000
+}
+
+@keyframes bgAnimation{
+  0%{transform:translate3d(-50%, -50%, 0) scale(1.3)}
+  100%{transform:translate3d(-50%, -50%, 0) scale(1)}
+}
+	</style>
+</head>
+<body>
+	<section class="test">
+        <div class="title">
+            <div class="bg_wrap small only-pc">
+                <img src="./test.jpg" class="bg_img" alt="">
+            </div>
+            <div class="title_inner">
+                <h2 class="title big notoBold">테스트</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
